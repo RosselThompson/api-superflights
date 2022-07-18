@@ -28,6 +28,3 @@ async function bootstrap() {
   await app.listen(3000);
 }
 bootstrap();
-
-
-TAREA: AÑADIR LOS DECORADORES DE SWAGGER NECESARIOS A LOS ENDPOINTS, AÑADIR DATOS DE PRUEBA
