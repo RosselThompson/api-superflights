@@ -15,6 +15,7 @@ async function bootstrap() {
     .setTitle('Super Flight API')
     .setDescription('Scheduled Flights App')
     .setVersion('1.0.0')
+    .addBearerAuth()
     .build();
 
   const document = SwaggerModule.createDocument(app, documentOptions);
@@ -25,6 +26,6 @@ async function bootstrap() {
     },
   });
 
-  await app.listen(3000);
+  await app.listen(process.env.PORT || 3000);
 }
 bootstrap();
